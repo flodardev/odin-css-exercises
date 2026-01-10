@@ -1,1 +1,15 @@
 /* Add CSS Styling */
+
+.first {
+    background-color: hsl(0, 0%, 0%);
+    color: lab(100% 0.01 -0.01);
+}
+
+.second {
+    background-color: hwb(60 0% 0%);
+}
+
+.first, .second {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Ronman", sans-serif;
+}
