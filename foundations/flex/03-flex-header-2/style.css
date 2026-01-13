@@ -6,20 +6,32 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 1em 0.5em; */
 }
 
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
+/* Start of left side of header */
+
+.left-side {
+  /* border: 1px dotted green; */
+  display: flex;
+  gap: 1em;
+  flex-flow: row wrap;
+  flex:auto
 }
 
 .logo {
@@ -27,14 +39,6 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-}
-
-button {
-  border: none;
-  border-radius: 8px;
-  background: rebeccapurple;
-  color: white;
-  padding: 8px 24px;
 }
 
 a {
@@ -46,3 +50,44 @@ a {
 ul {
   list-style-type: none;
 }
+
+.links {
+  /* border: 1px dotted green; */
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  gap: 1em;
+}
+
+/* End of left side of header */
+
+/* Start of right side of header */
+
+.right-side {
+  /* border: 1px dotted green; */
+  display: flex;
+  gap: 1em;
+  flex: auto;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: rebeccapurple;
+  color: white;
+  padding: 8px 24px;
+}
+
+/* End of right side of header */
+
+
